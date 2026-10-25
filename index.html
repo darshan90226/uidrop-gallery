@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>UIDrop</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💧</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=JetBrains+Mono:wght@400&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="wrap">
+  <header><div class="logo">UI<i>Drop</i></div><nav><a href="#gallery">Browse</a> <a href="https://github.com/your-username/uidrop">GitHub</a></nav></header>
+
+  <h1>Drop a UI snippet. Share it.</h1>
+  <p class="lede">Paste HTML and CSS, see it live, then send it to the open gallery as a pull request.</p>
+
+  <section class="composer" aria-label="Try a snippet">
+    <div class="l">
+      <div><label for="t">Title</label><input id="t" placeholder="Pill toggle switch" maxlength="48"></div>
+      <div class="row">
+        <div><label for="a">Your name</label><input id="a" placeholder="@yourname" maxlength="24"></div>
+        <div><label for="g">Category</label><select id="g"></select></div>
+      </div>
+      <div><label for="c">HTML + CSS</label><textarea id="c" spellcheck="false"></textarea></div>
+      <div class="msg" id="msg" role="alert"></div>
+      <div class="row">
+        <button id="add">Add to my gallery</button>
+        <button id="file" class="ghost">Copy contribution file</button>
+      </div>
+    </div>
+    <div class="r"><div class="pv-h">Live preview</div><iframe id="pv" sandbox title="Live preview"></iframe></div>
+  </section>
+
+  <section id="gallery">
+    <div class="bar"><h2>Gallery</h2><input class="search" id="q" type="search" placeholder="Search snippets" aria-label="Search snippets"></div>
+    <div class="chips" id="chips"></div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <footer>MIT licensed. Snippets run in a sandbox without JavaScript. Snippets you add here stay in your browser; use "Copy contribution file" to share them with everyone.</footer>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>

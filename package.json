@@ -1,0 +1,17 @@
+{
+  "name": "uidrop",
+  "version": "0.1.0",
+  "description": "An open-source gallery of copy-paste HTML/CSS UI snippets.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "snippets": "node scripts/build-snippets.mjs",
+    "dev": "npm run snippets && vite",
+    "build": "npm run snippets && vite build",
+    "preview": "vite preview",
+    "validate": "node scripts/build-snippets.mjs --strict"
+  },
+  "devDependencies": {
+    "vite": "^5.4.0"
+  }
+}

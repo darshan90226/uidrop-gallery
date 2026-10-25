@@ -1,0 +1,4 @@
+node_modules
+dist
+src/snippets.json
+.DS_Store
