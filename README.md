@@ -11,7 +11,7 @@ An open-source gallery of copy-paste HTML/CSS UI snippets. Browse, preview live,
 
 ```bash
 git clone https://github.com/your-username/uidrop.git
-cd uidrop
+cd uidrop-gallery
 npm install
 npm run dev
 ```
